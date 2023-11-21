@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+p{
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+header{
+    display: flex;
+    background-color: #EAC926;   
+    padding: 10px 0px 10px 10px;
+}
+header div{
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    width: 100px;
+  }
+body{
+    font-family: 'ROBOTO', sans-serif;
+    background-color: #ebebeb;
+}
+.contenedor-principal{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 9%;
+}
+.contenedor-principal h3{
+    text-align: center;
+    
+}
+.contenedor-principal div{
+    width: 90%;
+    margin-top: 10px;
+
+}
+
+.contenedor-principal div input{
+    width: 90%;
+    text-align: center;   
+    font-style: italic;
+}
+.fecha-nacimiento label{
+    font-weight: bold;
+}
+.foto-usuario label{
+    font-weight: bold;
+}
+.perfil-usuario{
+    display: flex;
+
+}
+.perfil-usuario select{
+    margin-left: 25px;
+}
+.perfil-usuario label{
+    font-weight: bold;
+}
+.intereses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.intereses-titulo{
+    font-weight: bold;
+}
+
+.intereses label{
+    text-align: left;
+    
+}
+.intereses-individual{
+
+    width: 100%;
+    border: solid 1 orange;
+
+}
+.intereses-individual div{
+    display: flex;
+}
+.intereses-individual div label{
+    align-items: left;
+    width: 50%;
+}
+.intereses-individual div input{
+    width: 15%;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.botones button{
+    width: 40%;
+    background-color: #0044AA;
+    border: solid 1px #0044AA;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.fecha-nacimiento label{
+    display: flex;
+}
+
+footer{
+    background-color: #666;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 1
+}
+footer div{
+    padding-top: 7px;
+}
+footer p{
+    color: white;
+}

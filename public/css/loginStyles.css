@@ -1,0 +1,259 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+body{
+  font-family: 'ROBOTO', sans-serif;
+  background-color: #ebebeb;
+}
+
+
+header {
+  background-color: #eac926;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.top-header h2 {
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  max-width: 200px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+.main-navbar {
+  display: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+
+}
+
+.burger-menu {
+  text-align: center;
+}
+
+.burger-menu i {
+  background-color: #03264c;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+.contenedor-principal{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.formulario-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+.formulario-login input{
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+.formulario-login button{
+  width: 100%;
+  background-color: green;
+  border: solid 1px green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 500ms;
+
+}
+.formulario-login button:hover{
+  background-color: #0022AA;
+}
+
+footer {
+  background-color: white;
+}
+
+footer div {
+  text-align: center;
+  padding: 20px;
+}
+
+footer div .icon {
+  font-size: 2em;
+  color: #1259c3;
+}
+
+footer div .title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #666;
+}
+
+footer div .description {
+  font-size: 1em;
+}
+
+
+
+@media (min-width: 361px) {
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .form {
+    display: flex;
+    max-width: 100px;
+    overflow: hidden;
+  }
+
+  .form .input {
+    width: 50px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .top-header h2 {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: right;
+  }
+
+  .copy-header {
+    max-width: 100px;
+    text-align: right;
+  }
+
+  .main-navbar {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar ul {
+    display: flex;
+  }
+
+  .main-navbar li {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+
+
+  .burger-menu {
+    display: none;
+  }
+  .formulario-login{
+
+    width: 300px;
+
+  
+  }
+}
+
+@media (min-width: 769px) {
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .form {
+    display: flex;
+    max-width: 200px;
+    overflow: hidden;
+  }
+
+  .form .input {
+    width: 150px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .top-header h2 {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: right;
+  }
+
+  .copy-header {
+    max-width: 325px;
+    text-align: right;
+  }
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar ul {
+    display: flex;
+  }
+
+  .main-navbar li {
+    margin: 0 5px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  .formulario-login{
+    width: 450px; 
+  }
+  
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}

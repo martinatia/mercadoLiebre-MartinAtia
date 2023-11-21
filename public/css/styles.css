@@ -1,0 +1,445 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 24px;
+  color: #666;
+}
+
+p {
+  font-size: 12px;
+}
+
+header {
+  background-color: #eac926;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.top-header h2 {
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  max-width: 200px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+.main-navbar {
+  display: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+main img {
+  width: 100%;
+}
+
+.burger-menu {
+  text-align: center;
+}
+
+.burger-menu i {
+  background-color: #03264c;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+.titulares {
+  font-size: 24px;
+  text-align: left;
+}
+
+/**/
+.ultma-visita,
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: box-shadow 500ms;
+}
+
+main section article:hover {
+  box-shadow: 0px 0px 10px rgb(6, 6, 6);
+
+}
+
+
+
+article .main-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  /*border-top: 1px solid #ebebeb;*/
+  position: relative;
+  padding: 15px;
+  display: none;
+}
+
+/**/
+
+.articulo i.fas.fa-truck {
+  border: 2px solid #39b54a;
+  border-radius: 50%;
+  padding: 5px;
+  color: #39b54a;
+  transition: transform 0.3s ease;
+}
+
+.precio {
+  font-size: 18px;
+  width: 30%;
+  display: block;
+  margin-right: 5px;
+}
+
+.descuento {
+  font-size: 16px;
+  color: #39b54a;
+  width: 70%;
+  text-align: right;
+}
+
+.descripcion {
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.descripcion:hover {
+  opacity: 1;
+
+}
+
+
+.articulo {
+  margin: 10px;
+}
+
+.articulo img {
+  display: block;
+  margin: auto;
+}
+
+.info-producto {
+  border-top: solid 1px #ebebeb;
+  padding: 15px 0px;
+  width: 100%;
+  /**/
+
+  position: relative;
+}
+
+.padre-descuento-precio {
+  display: flex;
+  justify-content: left;
+  justify-self: start;
+  margin-bottom: 15px;
+}
+
+/* reglas para poner en posicion la camioneta...
+*/
+.product-desc-box>.product-delivery-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: #39b54a;
+  transition: transform 0.3s ease;
+}
+.product-delivery-icon:hover {
+  transform: rotate(-360deg); 
+}
+.product-desc-box {
+  position: relative;
+}
+
+/**/
+footer {
+  background-color: white;
+}
+
+footer div {
+  text-align: center;
+  padding: 5px;
+}
+
+footer div .icon {
+  font-size: 2em;
+  color: #1259c3;
+}
+
+footer div .title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #666;
+}
+
+footer div .description {
+  font-size: 1em;
+  color: #666;
+}
+
+/*@media (max-width: 360px) {
+  .info-producto {
+    display: none;
+  }
+
+  header ul {
+    display: none;
+  }
+}*/
+
+@media (min-width: 361px) {
+  article .main-article {
+    display: flex;
+  }
+
+  main section article .description {
+    display: block;
+  }
+
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  main section div.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main section div.productos article {
+    width: 45%;
+  }
+
+  .price,
+  .discount {
+    width: 50%;
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .form {
+    display: flex;
+    max-width: 140px;
+    overflow: hidden;
+  }
+
+  .form .input {
+    width: 90px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .top-header h2 {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: right;
+  }
+
+  .copy-header {
+    max-width: 100px;
+    text-align: right;
+  }
+
+  .main-navbar {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar ul {
+    display: flex;
+  }
+
+  .main-navbar li {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+
+  .articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  main section div.productos article {
+    width: 22%;
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .form {
+    display: flex;
+    max-width: 200px;
+    overflow: hidden;
+  }
+
+  .form .input {
+    width: 150px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .top-header h2 {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: right;
+  }
+
+  .copy-header {
+    max-width: 325px;
+    text-align: right;
+  }
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar ul {
+    display: flex;
+  }
+
+  .main-navbar li {
+    margin: 0 5px;
+  }
+
+  .articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  footer div{
+    display: flex;
+  }
+  .elemento-footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .elemento-footer .title{
+    justify-content: center;
+  }
+  
+  .elemento-footer .icon{
+    justify-content: center;
+    font-size: 1.5em;
+    transition: color 500ms;
+  }
+  .elemento-footer .icon:hover{
+    color:  #39b54a;
+  }
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
