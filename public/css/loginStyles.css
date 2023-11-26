@@ -1,9 +1,14 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+}
+
+body {
   font-family: 'ROBOTO', sans-serif;
   background-color: #ebebeb;
 }
@@ -73,7 +78,7 @@ section.banner img {
   width: 40px;
 }
 
-.contenedor-principal{
+.contenedor-principal {
   display: flex;
   align-items: center;
   text-align: center;
@@ -83,7 +88,8 @@ section.banner img {
   margin-bottom: 20px;
 
 }
-.formulario-login{
+
+.formulario-login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,12 +99,14 @@ section.banner img {
   margin-top: 20px;
 
 }
-.formulario-login input{
+
+.formulario-login input {
   width: 100%;
   text-align: center;
   font-style: italic;
 }
-.formulario-login button{
+
+.formulario-login button {
   width: 100%;
   background-color: green;
   border: solid 1px green;
@@ -108,12 +116,14 @@ section.banner img {
   transition: background-color 500ms;
 
 }
-.formulario-login button:hover{
+
+.formulario-login button:hover {
   background-color: #0022AA;
 }
 
 footer {
   background-color: white;
+  margin-top: 80px;
 }
 
 footer div {
@@ -139,6 +149,9 @@ footer div .description {
 
 
 @media (min-width: 361px) {
+  .logo {
+    width: 250px;
+  }
 
   .top-header {
     display: flex;
@@ -191,15 +204,20 @@ footer div .description {
   .burger-menu {
     display: none;
   }
-  .formulario-login{
+
+  .formulario-login {
 
     width: 300px;
 
-  
+
   }
 }
 
 @media (min-width: 769px) {
+  main {
+    height: 150px;
+  }
+
 
   .top-header {
     display: flex;
@@ -248,11 +266,39 @@ footer div .description {
   .burger-menu {
     display: none;
   }
-  .formulario-login{
-    width: 450px; 
+
+  .formulario-login {
+    width: 450px;
   }
-  
+
+  footer div {
+    display: flex;
+    bottom: 0;
+
+  }
+
+  .elemento-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elemento-footer .title {
+    justify-content: center;
+  }
+
+  .elemento-footer .icon {
+    justify-content: center;
+    font-size: 1.5em;
+    transition: color 500ms;
+  }
+
+  .elemento-footer .icon:hover {
+    color: #39b54a;
+  }
+
+
 }
+
 label {
   display: block;
   margin-bottom: 8px;
