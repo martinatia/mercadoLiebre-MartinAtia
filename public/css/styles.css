@@ -25,7 +25,7 @@ header {
 .top-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .top-header h2 {
@@ -36,7 +36,9 @@ header {
 
 .form {
   display: flex;
-  max-width: 200px;
+  flex-wrap: nowrap;
+
+  /* max-width: 200px; */
 }
 
 section.banner img {
@@ -310,6 +312,7 @@ footer div .description {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
   }
 
@@ -324,7 +327,7 @@ footer div .description {
   }
 
   .logo {
-    width: 100px;
+    width: 150px;
   }
 
   .top-header h2 {
@@ -335,7 +338,7 @@ footer div .description {
 
   .copy-header {
     max-width: 100px;
-    text-align: right;
+    /* text-align: right; */
   }
 
   .main-navbar {
@@ -376,7 +379,7 @@ footer div .description {
   .form {
     display: flex;
     max-width: 200px;
-    overflow: hidden;
+    overflow: auto;
   }
 
   .form .input {
@@ -395,7 +398,7 @@ footer div .description {
 
   .copy-header {
     max-width: 325px;
-    text-align: right;
+    /* text-align: right; */
   }
 
   .main-navbar {

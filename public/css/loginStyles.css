@@ -150,7 +150,7 @@ footer div .description {
 
 @media (min-width: 361px) {
   .logo {
-    width: 250px;
+    width: 180px;
   }
 
   .top-header {
@@ -168,10 +168,6 @@ footer div .description {
 
   .form .input {
     width: 50px;
-  }
-
-  .logo {
-    width: 100px;
   }
 
   .top-header h2 {
